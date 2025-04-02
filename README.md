@@ -1,4 +1,4 @@
-# CartaoDeVisitas
+# Cartão de Visitas
 
 
 Este projeto elabora cartão de visitas a partir de um formulário, funciona de forma simples e intuitiva. O usuário preenche um formulário com suas informações, como nome, idade, telefone, e-mail e endereço. Após o envio, o site gera automaticamente um cartão de visitas digital ou imprimível em um design pré elaborado, formatado de maneira profissional.
