@@ -7,25 +7,33 @@ Este projeto elabora cartão de visitas a partir de um formulário, funciona de 
  1. Instalar o Node.js e o NPM (no projeto foi utilizada a v22.14.0)
   Baixe e instale o Node.js a partir do site oficial: https://nodejs.org/
 
-  Verifique a instalação:
-  ```node -v```
-
- 2. Instalar o Angular CLI
+> Verifique a instalação:
+``` bash
+node -v
+```
+2. Instalar o Angular CLI
   Para instalar globalmente, execute no terminal:
-  ```npm install -g @angular/cli```
+``` bash
+npm install -g @angular/cli
+```
 
-  Verifique a instalação:
-  ```ng version```
-
+Verifique a instalação:
+``` bash
+ng version
+``` 
 3. Instalar as dependências do projeto
   Com um terminal na pasta do projeto execute:
-  ```npm install```
+``` bash
+npm install
+```
 
-4. Rodar o projeto
+5. Rodar o projeto
   Execute no terminal:
-  ```ng serve```
-  ou
-  ```ng run start```
+``` bash
+ng serve
+  > ou
+ng run start
+```
 
  ## Estrutura do projeto
 
@@ -79,9 +87,6 @@ Este projeto elabora cartão de visitas a partir de um formulário, funciona de 
    TypeScript - Lógica da aplicação.
 
    CSS3 - Estilo visual.
-
-## Licença
-   Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ## Desafios
    Nesse projeto meu maior desafio foi a estruturação correta da orientação a objetos no JS, até descobrir ao certo como iria fazer, mas depois foi fluindo bem, além também da estilização no CSS. Outro desafio também foi na hora que quis fazer uma perfumaria e colocar umas nuvens de fundo, a parte de unir o JS com o CSS deu uma leve confusão depois de várias tentativas. 
