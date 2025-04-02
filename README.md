@@ -56,27 +56,27 @@ ng run start
 ## Como Funciona
    Ao acessar, na tela inicial é mostrado um formulário vazio e um cartão exemplo.
 
-   <img src="https://github.com/arthurantonello/cartao-de-visitas/public/img/prints/cartao-tela-inicial.png" alt="Tela inicial" width="500" height="275" />
+   <img src="https://github.com/arthurantonello/cartao-de-visitas/blob/master/public/img/prints/cartao-tela-inicial.png?raw=true" alt="Tela inicial" width="500" height="275" />
 
    Após preenchido, o formulário deverá se parecer com isso.
 
-   <img src="https://github.com/arthurantonello/cartao-de-visitas/public/img/prints/cartao-form-preenchido.png" alt="Tela do formulário preenchido" width="500" height="275" />
+   <img src="https://github.com/arthurantonello/cartao-de-visitas/blob/master/public/img/prints/cartao-form-preenchido.png?raw=true" alt="Tela do formulário preenchido" width="500" height="275" />
    
    Caso tudo tenha sido preenchido corretamenet, o botão "Enviar" irá ficar clicável e após de clicado o cartão será modificado com os dados inseridos.
 
-   <img src="https://github.com/arthurantonello/cartao-de-visitas/public/img/prints/cartao-form-pronto.png" alt="Tela do formulário pronto" width="500" height="275" />
+   <img src="https://github.com/arthurantonello/cartao-de-visitas/blob/master/public/img/prints/cartao-form-pronto.png?raw=true" alt="Tela do formulário pronto" width="500" height="275" />
 
    Se houver erro ou falta de preenchimento em alguma lacuna, o usuário será avisado disso e o botão "Enviar" se tornará inclicável.
 
-   <img src="https://github.com/arthurantonello/cartao-de-visitas/public/img/prints/cartao-validacao.png" alt="Tela com erros" width="500" height="275" />
+   <img src="https://github.com/arthurantonello/cartao-de-visitas/blob/master/public/img/prints/cartao-validacao.png?raw=true" alt="Tela com erros" width="500" height="275" />
 
    Com o cartão pronto, será possível baixá-lo em formato PDF, clicando em "Baixar em PDF"
 
-   <img src="https://github.com/arthurantonello/cartao-de-visitas/public/img/prints/cartao-pronto-baixar.png" alt="Tela inicial com busca preenchida" width="500" height="275" />
+   <img src="https://github.com/arthurantonello/cartao-de-visitas/blob/master/public/img/prints/cartao-pronto-baixar.png?raw=true" alt="Tela inicial com busca preenchida" width="500" height="275" />
 
    Após baixado, o arquivo se parecerá com isso, com o tamanho aumentado para melhorar a qualidade e já no formato correto para cartão de visitas.
 
-   <img src="https://github.com/arthurantonello/cartao-de-visitas/public/img/prints/cartao-pdf.png" alt="Tela inicial com busca preenchida" width="500" height="275" />
+   <img src="https://github.com/arthurantonello/cartao-de-visitas/blob/master/public/img/prints/cartao-pdf.png?raw=true" alt="Tela inicial com busca preenchida" width="500" height="250" />
    
    
 #
