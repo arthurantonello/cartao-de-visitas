@@ -1,0 +1,68 @@
+.card-container {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  min-height: 250px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-container:hover {
+  transform: scale(1.02);
+}
+
+/* Esquerda do cartão */
+.cartao-esquerda {
+  background: linear-gradient(135deg, #3295ff, #6cb6ff);
+  color: #fff;
+  width: 35%;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 50px;
+  margin-bottom: 10px;
+  filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.7));
+}
+
+/* Direita do cartão*/
+.cartao-direita {
+  width: 65%;
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+}
+
+.cartao-direita h2 {
+  margin-top: 0;
+}
+
+.cargo {
+  font-style: italic;
+  color: #666;
+}
+
+.contato-info p {
+  margin: 8px 0;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  transform: scale(1.01);
+  background: #0056b3;
+}

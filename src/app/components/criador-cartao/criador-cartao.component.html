@@ -1,0 +1,32 @@
+<div id="cartao" class="card-container" *ngIf="dados() as dados; else semDados">
+  <!-- Seção da esquerda -->
+  <div class="cartao-esquerda">
+    <img src="img/logo.png" alt="Logo da empresa" class="logo">
+    <h3>Empresa Tecnológica</h3>
+    <p><sub>Onde os sonhos começam</sub></p>
+  </div>
+
+  <!-- Seção da direita -->
+  <div class="cartao-direita">
+    <h2>{{ dados.dadosPessoais.nome }}, {{ dados.dadosPessoais.idade }} anos</h2>
+    <p class="cargo">Desenvolvedor de Software</p>
+
+    <div class="contato-info">
+      <p><strong>Telefone:</strong> {{ dados.dadosPessoais.telefone }}</p>
+      <p><strong>Email:</strong> {{ dados.dadosPessoais.email }}</p>
+      <p>
+        <strong>Endereço:</strong>
+        {{ dados.endereco.endereco }},
+        {{ dados.endereco.numero }} -
+        {{ dados.endereco.bairro }},
+        {{ dados.endereco.cidade }}
+      </p>
+    </div>
+  </div>
+</div>
+
+<ng-template #semDados>
+  <p>Nenhum dado foi enviado ainda.</p>
+</ng-template>
+
+<button (click)="downloadPDF()">Baixar em PDF</button>
