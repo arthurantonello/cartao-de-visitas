@@ -1,59 +1,89 @@
 # CartaoDeVisitas
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
 
-## Development server
+Este projeto elabora cartão de visitas a partir de um formulário, funciona de forma simples e intuitiva. O usuário preenche um formulário com suas informações, como nome, idade, telefone, e-mail e endereço. Após o envio, o site gera automaticamente um cartão de visitas digital ou imprimível em um design pré elaborado, formatado de maneira profissional.
 
-To start a local development server, run:
+ ## Para rodar esse projeto localmente será necessário:
+ 1. Instalar o Node.js e o NPM (no projeto foi utilizada a v22.14.0)
+  Baixe e instale o Node.js a partir do site oficial: https://nodejs.org/
 
-```bash
-ng serve
-```
+  Verifique a instalação:
+  ```node -v```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+ 2. Instalar o Angular CLI
+  Para instalar globalmente, execute no terminal:
+  ```npm install -g @angular/cli```
 
-## Code scaffolding
+  Verifique a instalação:
+  ```ng version```
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+3. Instalar as dependências do projeto
+  Com um terminal na pasta do projeto execute:
+  ```npm install```
 
-```bash
-ng generate component component-name
-```
+4. Rodar o projeto
+  Execute no terminal:
+  ```ng serve```
+  ou
+  ```ng run start```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+ ## Estrutura do projeto
 
-```bash
-ng generate --help
-```
+```/public```: Possui os arquivos de imagem.<br>
 
-## Building
+```/src```: Possui as pastas e arquivos principais para funcionamento.<br>
 
-To build the project run:
+```/src/app```: Aloca os componentes e services, além do componente padrão "app".<br>
 
-```bash
-ng build
-```
+```./components/criador-cartao```: Componente responsável pela criação do cartão, utiliza o forms enviado do home para isso.<br>
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+```./components/home```: Componente responsável pelo formulário que aparece para o usuário e após o preenchimento envia para o criador-cartao.<br>
 
-## Running unit tests
+```./services```:  Responsável em para armazenar e compartilhar os dados do formulário entre diferentes componentes da aplicação.<br>
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+```index.html```: Arquivo HTML principal para execução.<br>
 
-```bash
-ng test
-```
+#
 
-## Running end-to-end tests
+## Como Funciona
+   Ao acessar, na tela inicial é mostrado um formulário vazio e um cartão exemplo.
 
-For end-to-end (e2e) testing, run:
+   <img src="https://github.com/arthurantonello/cartao-de-visitas/public/img/prints/cartao-tela-inicial.png" alt="Tela inicial" width="500" height="275" />
 
-```bash
-ng e2e
-```
+   Após preenchido, o formulário deverá se parecer com isso.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+   <img src="https://github.com/arthurantonello/cartao-de-visitas/public/img/prints/cartao-form-preenchido.png" alt="Tela do formulário preenchido" width="500" height="275" />
+   
+   Caso tudo tenha sido preenchido corretamenet, o botão "Enviar" irá ficar clicável e após de clicado o cartão será modificado com os dados inseridos.
 
-## Additional Resources
+   <img src="https://github.com/arthurantonello/cartao-de-visitas/public/img/prints/cartao-form-pronto.png" alt="Tela do formulário pronto" width="500" height="275" />
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+   Se houver erro ou falta de preenchimento em alguma lacuna, o usuário será avisado disso e o botão "Enviar" se tornará inclicável.
+
+   <img src="https://github.com/arthurantonello/cartao-de-visitas/public/img/prints/cartao-validacao.png" alt="Tela com erros" width="500" height="275" />
+
+   Com o cartão pronto, será possível baixá-lo em formato PDF, clicando em "Baixar em PDF"
+
+   <img src="https://github.com/arthurantonello/cartao-de-visitas/public/img/prints/cartao-pronto-baixar.png" alt="Tela inicial com busca preenchida" width="500" height="275" />
+
+   Após baixado, o arquivo se parecerá com isso, com o tamanho aumentado para melhorar a qualidade e já no formato correto para cartão de visitas.
+
+   <img src="https://github.com/arthurantonello/cartao-de-visitas/public/img/prints/cartao-pdf.png" alt="Tela inicial com busca preenchida" width="500" height="275" />
+   
+   
+#
+
+## Tecnologias Utilizadas
+   Angular - Organização do código em componentes, serviços e módulos.
+
+   TypeScript - Lógica da aplicação.
+
+   CSS3 - Estilo visual.
+
+## Licença
+   Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## Desafios
+   Nesse projeto meu maior desafio foi a estruturação correta da orientação a objetos no JS, até descobrir ao certo como iria fazer, mas depois foi fluindo bem, além também da estilização no CSS. Outro desafio também foi na hora que quis fazer uma perfumaria e colocar umas nuvens de fundo, a parte de unir o JS com o CSS deu uma leve confusão depois de várias tentativas. 
+
+
